@@ -11,12 +11,15 @@ export const TrainCharacteristicsTable = ({ characteristics }: Props) => {
     <table className={styles.trainCharacteristicsTable}>
       <tbody>
         <tr>
-          <th className={styles.trainCharacteristicsTableHeader}>Ток двигателя</th>
+          <th className={styles.trainCharacteristicsTableHeader}>
+            Ток двигателя
+          </th>
           <th className={styles.trainCharacteristicsTableHeader}>Сила тяги</th>
           <th className={styles.trainCharacteristicsTableHeader}>Скорость</th>
         </tr>
         {characteristics.map((_, i) => (
-          <TrainCharacteristicsRow index={i} />
+          // index as key because there is no id
+          <TrainCharacteristicsRow index={i} key={i} />
         ))}
       </tbody>
     </table>

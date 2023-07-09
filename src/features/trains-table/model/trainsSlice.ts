@@ -161,7 +161,7 @@ export const fetchTrainsList = createAsyncThunk(
   "trainsTable/fetchTrainsList",
   async () => {
     const response = await fetch(GET_TRAINS_URL);
-    console.log(response);
+
     return response.json();
   }
 );
