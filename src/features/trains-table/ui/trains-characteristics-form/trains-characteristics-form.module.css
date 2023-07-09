@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  background-color: #424242;
+  padding: 8px 12px;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .3s; 
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+.button:disabled {
+  background-color: #999999;
+  cursor: not-allowed;
+}

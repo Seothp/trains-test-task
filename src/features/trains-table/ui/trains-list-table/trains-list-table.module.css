@@ -1,0 +1,17 @@
+.trainsListTable {
+  border-spacing: 0;
+}
+
+.trainsListTableHeader {
+  background-color: #dfdfdf;
+  text-align: left;
+}
+
+.tableListTableCell {
+  padding: 4px 8px;
+  border-bottom: 1px solid black;
+}
+
+.trainsListTableRow:last-child .tableListTableCell {
+  border-bottom: none;
+}
